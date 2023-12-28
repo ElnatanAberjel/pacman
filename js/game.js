@@ -10,25 +10,25 @@ var gCherryInterval
 var gGame
 var gBoard
 
-var intro = new Audio('../sound/pacman_beginning.wav')
-intro.volume = 0.2
+var intro = new Audio('sound/pacman_beginning.wav')
+intro.volume = 0.5
 
-var EatingFruit = new Audio('../sound/pacman_eatfruit.wav')
+var EatingFruit = new Audio('sound/pacman_eatfruit.wav')
 EatingFruit.volume = 0.5
 
-var EatingGhost = new Audio('../sound/pacman_eatghost.wav')
+var EatingGhost = new Audio('sound/pacman_eatghost.wav')
 EatingGhost.volume = 0.5
 
-var Death = new Audio('../sound/pacman_death.wav')
+var Death = new Audio('sound/pacman_death.wav')
 Death.volume = 0.5
 
-var victory = new Audio('../sound/victory.wav')
+var victory = new Audio('sound/victory.wav')
 victory.volume = 0.5
 
-var superFood = new Audio('../sound/superFood.mp3')
+var superFood = new Audio('sound/superFood.mp3')
 superFood.volume = 0.5
 
-var Food = new Audio('../sound/pacman_chomp.wav')
+var Food = new Audio('sound/pacman_chomp.wav')
 Food.volume = 0.2
 
 
@@ -43,14 +43,13 @@ intro.addEventListener('ended', function () {
 
 function init() {
 
-
     gGame = {
         score: 0,
         isOn: true,
         isVictory: false,
         foodCount: 0
     }
-    intro.play()
+    
 
     gBoard = buildBoard()
     createPacman(gBoard)
@@ -62,6 +61,7 @@ function init() {
 
     gCherryInterval = setInterval(addCherry, 15000)
     closeModal()
+    intro.play()
 }
 
 function buildBoard() {
