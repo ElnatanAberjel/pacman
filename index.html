@@ -9,9 +9,14 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 
-<body onload="init()" onkeyup="movePacman(event)">
+<body onkeyup="movePacman(event)">
     <h1>Pacman</h1>
     <h2>Score: <span>0</span></h2>
+    <div class="start">
+        <img class="startPaaman" src="img/uwnFDl0.gif" alt="">
+        <h3 class="pacmanH3">Let's Play Pacman</h3>
+        <button class="letsPlay" onclick="init()">Play</button>
+    </div>
     <div class="board-container"></div>
     <div class="modal">
         <h3 class="msg"></h3>
@@ -24,5 +29,4 @@
     <script src="js/pacman.js"></script>
     <script src="js/ghost.js"></script>
 </body>
-
 </html>

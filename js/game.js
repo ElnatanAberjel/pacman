@@ -40,8 +40,17 @@ intro.addEventListener('ended', function () {
 });
 
 
+function start(){
+    const elStart = document.querySelector('.start')
+    elStart.style.display = 'block'
+
+}
+
 
 function init() {
+
+    const elStart = document.querySelector('.start')
+    elStart.style.display = 'none'
 
     gGame = {
         score: 0,

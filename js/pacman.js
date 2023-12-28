@@ -1,6 +1,6 @@
 'use strict'
 
-const PACMAN = '<img src="img/PACMAN.gif"/>'
+const PACMAN = '<img class="pacamnImg" src="img/PACMAN.gif"/>'
 var gPacman
 
 function createPacman(board) {
