@@ -1,6 +1,6 @@
 'use strict'
 
-const PACMAN = '🐱‍🚀'
+const PACMAN = '<img src="img/PACMAN.gif"/>'
 var gPacman
 
 function createPacman(board) {
@@ -71,22 +71,22 @@ function getNextLocation(eventKeyboard) {
 
     switch (eventKeyboard.key) {
         case 'ArrowUp':
-            gPacman.deg = 0
+            gPacman.deg = -90
             nextLocation.i--
             break;
 
         case 'ArrowDown':
-            gPacman.deg = 180
+            gPacman.deg = 90
             nextLocation.i++
             break;
 
         case 'ArrowLeft':
-            gPacman.deg = -90
+            gPacman.deg = 180
             nextLocation.j--
             break;
 
         case 'ArrowRight':
-            gPacman.deg = 90
+            gPacman.deg = 0
             nextLocation.j++
             break;
 
