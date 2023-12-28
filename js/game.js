@@ -43,6 +43,8 @@ intro.addEventListener('ended', function () {
 function start(){
     const elStart = document.querySelector('.start')
     elStart.style.display = 'block'
+    const elBtn = document.querySelector('.modal button')
+    elBtn.style.display = 'none'
 
 }
 
@@ -137,6 +139,7 @@ function getEmptyLocation(board) {
 
 function gameOver() {
     intro.pause()
+    intro.currentTime = 0
     Death.play()
     console.log('Game Over')
     clearInterval(gGhostsInterval)
@@ -145,6 +148,8 @@ function gameOver() {
 
     const msg = gGame.isVictory ? '🥳victorious🥳' : 'Game Over'
     openModal(msg)
+    const elBtn = document.querySelector('.modal button')
+    elBtn.style.display = 'inline-block'
 }
 
 function checkVictory() {
