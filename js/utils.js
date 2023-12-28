@@ -16,7 +16,7 @@ function renderBoard(mat, selector) {
         strHTML += '</tr>'
     }
     strHTML += '</tbody></table>'
-    
+
     const elContainer = document.querySelector(selector)
     elContainer.innerHTML = strHTML
 }

@@ -53,7 +53,7 @@ function init() {
         isVictory: false,
         foodCount: 0
     }
-    
+
 
     gBoard = buildBoard()
     createPacman(gBoard)

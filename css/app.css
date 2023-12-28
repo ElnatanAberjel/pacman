@@ -1,13 +1,13 @@
 body {
     background-color: black;
-	text-align: center;
-	color: lightgray;
+    text-align: center;
+    color: lightgray;
 }
 
-h1{
-	font-size: 45px;
-	background-color: #d02d2d;
-	color: black
+h1 {
+    font-size: 45px;
+    background-color: #d02d2d;
+    color: black
 }
 
 h2 {
@@ -15,24 +15,24 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.pacmanH3{
+.pacmanH3 {
     color: rgb(255, 255, 0);
 }
 
-h3{
-	font-size: 35px;
-	color: rgb(255, 255, 255)
+h3 {
+    font-size: 35px;
+    color: rgb(255, 255, 255)
 }
 
 table {
-	margin: 100px auto;
-	border: 1px solid lightgray;
+    margin: 100px auto;
+    border: 1px solid lightgray;
 }
 
 .cell {
-	width: 40px;
-	height: 40px;
-	font-size: 1.5em;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
 }
 
 .mode {
@@ -70,12 +70,13 @@ table {
     background-color: #ff0000;
     color: white;
 }
-.pacamnImg{
+
+.pacamnImg {
     width: 25px;
 }
 
 
-.modal button{
+.modal button {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
