@@ -9,18 +9,18 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 
-<body onload="start()" onkeyup="movePacman(event)">
+<body onkeyup="movePacman(event)">
     <h1>Pacman</h1>
-    <h2>Score: <span>0</span></h2>
+    <h2 style="display:none;">Score: <span>0</span></h2>
     <div class="start">
-        <img class="startPaaman" src="img/uwnFDl0.gif" alt="">
+        <img class="startPaaman" src="img/uwnFDl0.gif">
         <h3 class="pacmanH3">Let's Play Pacman</h3>
         <button class="letsPlay" onclick="init()">Play</button>
     </div>
     <div class="board-container"></div>
     <div class="modal">
         <h3 class="msg"></h3>
-        <button class="restart=btn" onclick="init()">Play Again</button>
+        <button style="display:none;" class="restart=btn" onclick="init()">Play Again</button>
     </div>
 
 

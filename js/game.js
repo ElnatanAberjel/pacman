@@ -31,8 +31,6 @@ superFood.volume = 0.5
 var Food = new Audio('sound/pacman_chomp.wav')
 Food.volume = 0.2
 
-
-
 intro.addEventListener('ended', function () {
 
     intro.play();
@@ -40,19 +38,14 @@ intro.addEventListener('ended', function () {
 });
 
 
-function start(){
-    const elStart = document.querySelector('.start')
-    elStart.style.display = 'block'
-    const elBtn = document.querySelector('.modal button')
-    elBtn.style.display = 'none'
-
-}
-
 
 function init() {
 
     const elStart = document.querySelector('.start')
     elStart.style.display = 'none'
+
+    const elScore = document.querySelector('h2')
+    elScore.style.display = 'block'
 
     gGame = {
         score: 0,
